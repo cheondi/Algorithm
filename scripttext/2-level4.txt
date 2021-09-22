@@ -1,0 +1,56 @@
+using System.ComponentModel;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public class Solution 
+{
+    public static int solution(int bridge_length, int weight, int[] truck_weights) 
+    {
+        int answer = 0;
+        Queue<int> que_truck = new Queue<int>();
+        Queue<int> que_bridge = new Queue<int>();
+        for(int i =0;i<truck_weights.Length;i++)
+            que_truck.Enqueue(truck_weights[i]);
+        int sum = 0;
+        int deque=0;
+        while(true)
+        {
+            answer ++;
+            if(que_bridge.Count==bridge_length)
+            {
+                sum=sum-que_bridge.Dequeue();
+            }
+            if(answer ==1)
+                deque = que_truck.Dequeue();
+            if(deque+sum>weight)
+            {
+                que_bridge.Enqueue(0);
+                Console.WriteLine(answer + " : 0");
+            }
+            else
+            {
+                que_bridge.Enqueue(deque);
+                sum = sum+deque;
+                Console.WriteLine(answer + " : " + deque);
+                if(que_truck.Count==0)
+                    deque=0;
+                else
+                    deque = que_truck.Dequeue();
+            }
+            if(que_truck.Count==0 &&deque==0)
+            {
+                answer+=bridge_length;
+                break;
+            }
+        }
+        return answer;
+    }
+    public static void Main(string[] args)
+    {
+        int i = 5;
+        int j = 5;
+        int[] k =new int[] {2,2,2,2,1,1,1,1,1};	
+        Console.WriteLine(solution(i,j,k));
+    }
+}

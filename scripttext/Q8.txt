@@ -1,0 +1,62 @@
+using System.Collections;
+using System.Globalization;
+using System;
+using static System.Console;
+using static consoleapp1.Global;
+using static consoleapp1.Program;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
+using System.Linq;
+
+namespace consoleapp1
+{
+    public class Global
+    {
+        public static string m;
+    }
+   
+    class Program
+    {       
+        public static void Main()
+        {
+            
+            m = ReadLine();
+            WriteLine(Sorting(m));
+        }
+        public static string Sorting(string m)
+        {
+            List<string> alpa = new List<string>();
+            List<int> num = new List<int>();
+            string newm = null;
+            WriteLine(m.Length);
+            for(int i=0;i<m.Length;i++)
+            {
+                if(Convert.ToInt32(char.Parse((m.Substring(i,1))))<58)
+                {
+                    WriteLine(m.Substring(i,1));
+                    num.Add(int.Parse(m.Substring(i,1)));
+                }
+                else
+                {
+                    alpa.Add(m.Substring(i,1));
+                }
+            }
+            alpa.Sort();
+            num.Sort();
+            for(int i =0;i<alpa.Count;i++)
+            {
+                WriteLine(alpa[i]);
+                newm = newm +alpa[i];
+            }
+            for(int i =0;i<num.Count;i++)
+            {
+                WriteLine(num[i]);
+                newm = newm +num[i];
+            }
+            
+            return newm;
+        }
+    }
+    
+}

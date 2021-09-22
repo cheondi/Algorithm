@@ -1,0 +1,136 @@
+using System.Collections;
+using System.Globalization;
+using System;
+using static System.Console;
+using static consoleapp1.Global;
+using static consoleapp1.Program;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
+using System.Linq;
+
+namespace consoleapp1
+{
+    public class Global
+    {
+        
+        public static string m; //키
+        public static string n; //자물쇠
+        public static int[,] master;
+        public static int[,] key;
+        public static int mcnt=0;
+        public static int ncnt=0;
+    }
+   
+    class Program
+    {       
+        public static void Main()
+        {
+            //m<=n
+            string[] stringSeparators = new string[] { "[","]" ,","," "};
+            m = ReadLine();
+            string[] mresult = m.Split(stringSeparators, StringSplitOptions.RemoveEmptyEntries);
+            n = ReadLine();
+            string[] nresult = n.Split(stringSeparators,StringSplitOptions.RemoveEmptyEntries);
+            mcnt = (int)Math.Sqrt(mresult.Length);
+            ncnt = (int)Math.Sqrt(nresult.Length);
+            master = new int[mcnt,mcnt];
+            key = new int[ncnt,ncnt];
+            for(int i = 0;i<mcnt;i++)
+            {
+                for(int j=0;j<mcnt;j++)
+                {
+                    master[i,j] = int.Parse(mresult[i*mcnt+j]);
+                }
+            }
+            for(int i = 0;i<ncnt;i++)
+            {
+                for(int j=0;j<ncnt;j++)
+                {
+                    key[i,j] = int.Parse(nresult[i*ncnt+j]);
+                }
+            }
+            WriteLine(Calc(master,key));
+        }
+        public static int[,] Setbig(int[,] big)
+        {
+            for(int i = 0; i<mcnt+ncnt*2; i++)
+            {
+                for(int j =0; j<mcnt+ncnt*2;j++)
+                {
+                    if(i>=ncnt&&i<mcnt+ncnt&&j>=ncnt&&j<ncnt+mcnt)
+                        big[i,j] = master[i-ncnt,j-ncnt];
+                    else
+                        big[i,j] = 0;
+                }
+            }
+            return big;
+        }
+        public static bool Calc(int[,] master, int[,] key)
+        {
+            int[,] fbig = new int[mcnt+ncnt*2,mcnt+ncnt*2];
+            for (int k = 0; k < 4; k++)
+            {
+                for (int icnt = 1; icnt < ncnt + mcnt; icnt++)
+                {
+                    for (int jcnt = 1; jcnt < ncnt + mcnt; jcnt++)
+                    {
+                        fbig = Setbig(fbig);
+                        for (int i = icnt; i < ncnt + icnt; i++)
+                        {
+                            for (int j = jcnt; j < ncnt + jcnt; j++)
+                            {
+                                fbig[i, j] = fbig[i, j] + key[i-icnt,j-jcnt];
+                            }
+                        }
+                        for (int e = 0; e < 10; e++)
+                        {
+                            for (int r = 0; r < 10; r++)
+                            {
+                                Write(fbig[e, r]);
+                            }
+                            WriteLine();
+                        }
+                        WriteLine();
+                        if (Check(fbig))
+                        {
+                            return true;
+                        }
+                    }
+                }
+                key = Turn90(key);
+            }
+            return false;
+        }
+        public static bool Check(int[,] big)
+        {
+            for(int i=ncnt;i<mcnt+ncnt;i++)
+            {
+                for(int j=ncnt;j<mcnt+ncnt;j++)
+                {
+                    if(big[i,j]==0)
+                    {
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+        public static int[,] Turn90(int[,] key)
+        {
+            int[,] newkey = new int[ncnt,ncnt];
+            for(int i =0;i<ncnt;i++)
+            {
+                for(int j =0;j<ncnt;j++)
+                {
+                    newkey[i,j] = key[ncnt-1-j,i];
+                    Write(newkey[i,j]);
+                }
+                WriteLine();
+            }
+            WriteLine();
+            
+            return newkey;
+        }
+    }
+}

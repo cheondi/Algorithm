@@ -1,0 +1,80 @@
+using System.Collections;
+using System.Globalization;
+using System;
+using static System.Console;
+using static consoleapp1.Global;
+using static consoleapp1.Program;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
+using System.Linq;
+
+namespace consoleapp1
+{
+    public class Global
+    {
+        public static string m;
+    }
+   
+    class Program
+    {       
+        public static void Main()
+        {
+            
+            m = ReadLine();
+            WriteLine(Compressing(m));
+        }
+        public static int Compressing(string m)
+        {
+            int result = 1001;
+            for(int i = 1; i<=m.Length;i++)
+            {
+                if(Compress(m,i).Length<result)
+                {
+                    result = Compress(m,i).Length;
+                    
+                }
+                WriteLine("if index = " + i+ "  result = " +Compress(m,i)+ " " + Compress(m,i).Length);
+            }
+            return result;
+        }
+        public static string Compress(string m ,int index)
+        {
+            List<string> newm = new List<string>();
+            string result = null;
+            int lastindex = m.Length%index;
+            for(int i = 0; i<m.Length;i+=index)
+            {
+                if(i+index>m.Length)
+                    newm.Add(m.Substring(i,lastindex));
+                else
+                    newm.Add(m.Substring(i,index));
+            }
+            for(int i=0;i<newm.Count;i++)
+            {
+                int sum =1;
+                for(int j=i+1;j<newm.Count;j++)
+                {
+                    if(newm[i]==newm[j])
+                    {
+                        sum++;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+                if(sum==1)
+                {
+                    result = result + newm[i];
+                }
+                else
+                {
+                    result = result+sum.ToString() + newm[i];
+                }
+                i=i+sum-1;
+            }
+            return result;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+C:\Algorithm\new1\bin\Debug\net5.0\new1.exe
+C:\Algorithm\new1\bin\Debug\net5.0\new1.deps.json
+C:\Algorithm\new1\bin\Debug\net5.0\new1.runtimeconfig.json
+C:\Algorithm\new1\bin\Debug\net5.0\new1.runtimeconfig.dev.json
+C:\Algorithm\new1\bin\Debug\net5.0\new1.dll
+C:\Algorithm\new1\bin\Debug\net5.0\ref\new1.dll
+C:\Algorithm\new1\bin\Debug\net5.0\new1.pdb
+C:\Algorithm\new1\obj\Debug\net5.0\new1.csprojAssemblyReference.cache
+C:\Algorithm\new1\obj\Debug\net5.0\new1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Algorithm\new1\obj\Debug\net5.0\new1.AssemblyInfoInputs.cache
+C:\Algorithm\new1\obj\Debug\net5.0\new1.AssemblyInfo.cs
+C:\Algorithm\new1\obj\Debug\net5.0\new1.csproj.CoreCompileInputs.cache
+C:\Algorithm\new1\obj\Debug\net5.0\new1.dll
+C:\Algorithm\new1\obj\Debug\net5.0\ref\new1.dll
+C:\Algorithm\new1\obj\Debug\net5.0\new1.pdb
+C:\Algorithm\new1\obj\Debug\net5.0\new1.genruntimeconfig.cache
