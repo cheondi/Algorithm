@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kwon9\\github.Algorithm\\Algorithm\\new1.csproj": {}
+    "c:\\Users\\kwon9\\OneDrive\\바탕 화면\\github\\github.Algorithm\\Algorithm\\new1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kwon9\\github.Algorithm\\Algorithm\\new1.csproj": {
+    "c:\\Users\\kwon9\\OneDrive\\바탕 화면\\github\\github.Algorithm\\Algorithm\\new1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kwon9\\github.Algorithm\\Algorithm\\new1.csproj",
+        "projectUniqueName": "c:\\Users\\kwon9\\OneDrive\\바탕 화면\\github\\github.Algorithm\\Algorithm\\new1.csproj",
         "projectName": "new1",
-        "projectPath": "C:\\Users\\kwon9\\github.Algorithm\\Algorithm\\new1.csproj",
+        "projectPath": "c:\\Users\\kwon9\\OneDrive\\바탕 화면\\github\\github.Algorithm\\Algorithm\\new1.csproj",
         "packagesPath": "C:\\Users\\kwon9\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kwon9\\github.Algorithm\\Algorithm\\obj\\",
+        "outputPath": "c:\\Users\\kwon9\\OneDrive\\바탕 화면\\github\\github.Algorithm\\Algorithm\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
