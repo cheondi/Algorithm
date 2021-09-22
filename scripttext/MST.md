@@ -1,3 +1,4 @@
+~~~ cs
 using System.Collections;
 using System.Globalization;
 using System;
@@ -106,10 +107,6 @@ namespace consoleapp1
 
         }
     }
-    
-
-    
-       
-    
 }
+~~~
     

@@ -1,3 +1,5 @@
+~~~ cs
+using System.Globalization;
 using System;
 using static System.Console;
 using static consoleapp1.Global;
@@ -12,33 +14,34 @@ namespace consoleapp1
     public class Global
     {
         public static int m;
-        public static int[] d =new int[10001];
+        public static int[] d =new int[1001];
     }
+   
     class Program
     {       
         public static void Main()
         {
+            
             m = int.Parse(ReadLine());
-            Write(fibonacci(m));
             
+            Write(dp(m));
         }
-        public static int fibonacci(int x)
+        public static int dp(int x)
         {
-
-            if(x==1||x==2)
+            d[0]=0;
+            d[1]=1;
+            d[2]=3;
+            for(int i=3;i<x+1;i++)
             {
-                return 1;
+                d[i]=d[i-1]+2*d[i-2];
             }
-
-            if(d[x]!=0)
-            {
-                return d[x];
-            }
-            
-            d[x]= fibonacci(x-1)+fibonacci(x-2);
             return d[x];
-            
         }
+        /*public static int max(int a, int b)
+        {
+            
+        }*/
     }
     
 }
+~~~

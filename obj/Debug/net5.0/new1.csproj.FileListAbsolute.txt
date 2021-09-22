@@ -14,3 +14,11 @@ C:\Algorithm\new1\obj\Debug\net5.0\new1.dll
 C:\Algorithm\new1\obj\Debug\net5.0\ref\new1.dll
 C:\Algorithm\new1\obj\Debug\net5.0\new1.pdb
 C:\Algorithm\new1\obj\Debug\net5.0\new1.genruntimeconfig.cache
+C:\Users\kwon9\github.Algorithm\Algorithm\obj\Debug\net5.0\new1.csprojAssemblyReference.cache
+C:\Users\kwon9\github.Algorithm\Algorithm\obj\Debug\net5.0\new1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kwon9\github.Algorithm\Algorithm\obj\Debug\net5.0\new1.AssemblyInfoInputs.cache
+C:\Users\kwon9\github.Algorithm\Algorithm\obj\Debug\net5.0\new1.AssemblyInfo.cs
+C:\Users\kwon9\github.Algorithm\Algorithm\obj\Debug\net5.0\new1.csproj.CoreCompileInputs.cache
+C:\Users\kwon9\github.Algorithm\Algorithm\obj\Debug\net5.0\new1.dll
+C:\Users\kwon9\github.Algorithm\Algorithm\obj\Debug\net5.0\ref\new1.dll
+C:\Users\kwon9\github.Algorithm\Algorithm\obj\Debug\net5.0\new1.pdb

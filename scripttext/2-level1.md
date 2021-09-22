@@ -1,3 +1,4 @@
+~~~ cs
 using System.ComponentModel;
 using System;
 using System.Collections.Generic;
@@ -76,3 +77,4 @@ public class Solution
             Console.WriteLine(solution(i,j)[k]);
     }
 }
+~~~

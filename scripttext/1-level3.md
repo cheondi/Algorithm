@@ -1,3 +1,4 @@
+~~~ cs
 using System.Security.Principal;
 using System.ComponentModel;
 using System;
@@ -78,3 +79,4 @@ public class Solution
             Console.WriteLine(solution(i,j)[k]);
     }
 }
+~~~
