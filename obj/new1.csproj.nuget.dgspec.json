@@ -1,32 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\kwon9\\OneDrive\\바탕 화면\\github\\github.Algorithm\\Algorithm\\new1.csproj": {}
+    "C:\\Users\\kwon9\\Desktop\\github\\Algorithm\\new1.csproj": {}
   },
   "projects": {
-    "c:\\Users\\kwon9\\OneDrive\\바탕 화면\\github\\github.Algorithm\\Algorithm\\new1.csproj": {
+    "C:\\Users\\kwon9\\Desktop\\github\\Algorithm\\new1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\kwon9\\OneDrive\\바탕 화면\\github\\github.Algorithm\\Algorithm\\new1.csproj",
+        "projectUniqueName": "C:\\Users\\kwon9\\Desktop\\github\\Algorithm\\new1.csproj",
         "projectName": "new1",
-        "projectPath": "c:\\Users\\kwon9\\OneDrive\\바탕 화면\\github\\github.Algorithm\\Algorithm\\new1.csproj",
+        "projectPath": "C:\\Users\\kwon9\\Desktop\\github\\Algorithm\\new1.csproj",
         "packagesPath": "C:\\Users\\kwon9\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\kwon9\\OneDrive\\바탕 화면\\github\\github.Algorithm\\Algorithm\\obj\\",
+        "outputPath": "C:\\Users\\kwon9\\Desktop\\github\\Algorithm\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kwon9\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\kwon9\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,16 +43,35 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.17, 5.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

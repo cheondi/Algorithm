@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "/UwGlISDumLaGCom0eCJWUWUSC0nqNV5mJopXjwTP+R6UAS7WkSXk3kFB+kBJY5HrFqNNmFHYuF1TQ3HRN7AXw==",
+  "dgSpecHash": "8W+PjDXPqOaXlECuKBhUZFKtzV8xa6ieXl2ql3FRXeyyLLthaICgxIDVBJjDBwo3iQmbR8gVaJDQ3NUJ/ZNyPQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\kwon9\\OneDrive\\바탕 화면\\github\\github.Algorithm\\Algorithm\\new1.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\kwon9\\Desktop\\github\\Algorithm\\new1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kwon9\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kwon9\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kwon9\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\kwon9\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
